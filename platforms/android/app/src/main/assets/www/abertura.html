@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+        <title>EBFUT</title>
+    </head>
+    <body>
+       <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+         <div id="NavBarTopoHome" class="navbar no-shadow tema-primario">
+                    <div class="navbar-inner" style="justify-content:center">
+                        <div class="title" id="titleApp" ><i id="icone" class="mdi mdi-soccer"></i> FUTEBOL & RESENHA <i id="icone" class="mdi mdi-soccer"></i></div>
+           			</div>
+                </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+
+			<div data-speed="900" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+			  <div class="swiper-pagination"></div>
+			  <div class="swiper-wrapper">
+				<div class="swiper-slide">				
+					<center> <h3 style="color:#60635f";>Seja muito bem-vindo!</h3>
+						<p style="color:#9b9e99">FUTEBOL & RESENHA é o App indicado para os peladeiros trocarem informações entre sí, controlando suas peladas, votando nos melhores jogadores e nos bola-muchas de suas peladas.
+						
+						A versão grátis te permite criar um grupo e tirar times, caso você deseje utilizar a versão que consegue administra mais de uma pelada, será necessário adquirir a versão ouro que custa somente R$ 4,99 - após a aquisição dessa versão, você terá acesso ilimitado ao App.
+						</p>
+						<img src="img/futebol.png" style="max-width:100%">
+					</center>				
+				</div>
+				<div class="swiper-slide">
+					<center> <h3 style="color:#60635f";>Principais recursos</h3>
+						<p style="color:#9b9e99"> Versão grátis </p>
+						<p style="color:#9b9e99"> Criar grupo, Tirar times, por sorteio e/ou força/nível</p>
+
+						<p style="color:#9b9e99"> Versão ouro </p>
+						<p style="color:#9b9e99"> Criar grupos ilimitados, Tirar times, por sorteio e/ou força/nível e posições</p>
+						<p style="color:#9b9e99"> Controlar: frequencia, financeiro, ranking</p>
+						<p style="color:#9b9e99"> Tirar times, por sorteio e/ou força/nível e posições</p>
+						<p style="color:#9b9e99"> Troca de mensagens entre os integrantes</p>
+						<p style="color:#9b9e99"> Combinar jogos entre os grupos </p>
+						<img src="img/gol.png" style="max-width:100%">
+					</center>				
+				</div>
+				<div class="swiper-slide">	
+				<div class="swiper-slide">
+					<center> <h3 style="color:#60635f";>Parabéns</h3>
+						<p style="color:#9b9e99">Agora, você pode de casa controlar tudo que aconteceu na pelada.</p>
+						<img src="img/futsofa.png" style="max-width:100%">
+						
+						<div class="block">
+						  <p class="row">
+							<button id="queroCadastrar" class="col button button-big button-fill">QUERO ME CADASTRAR</button>
+						  </p><br>
+						  <a href="/login/" class="link"><i class="mdi mdi-login-variant"><b> Fazer Login </b></a>
+						  <a href="/home/" class="link"><i class="mdi mdi-login-variant"><b> Off-line </b></a>
+						</div>						
+						
+					</center>				
+				</div>
+				</div>
+			  </div>
+			</div>				  
+		 
+          </div>
+		  
+		  
+        </div>
+      </div>
+    </div>
+		
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    
+		
+    <script type="text/javascript" src="cordova.js"></script>
+        
+    </body>
+</html>

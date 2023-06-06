@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+        <title>Tirar Times</title>
+    </head>
+    <body>
+       <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+                <div id="NavBarTopoCadastrar" class="navbar no-shadow tema-primario" style="margin-bottom:0px;">
+                    <div class="navbar-inner" style="justify-content:left">
+   						<div class="left">
+                            <a href="/atividades/" class="link" id="MenuPrincipal" data-panel="left">
+                                <i class="mdi mdi-arrow-left"> </i>
+                            </a>
+                        </div>
+						
+						<div class="title" id="titleAppCadAtletas"><i class="mdi mdi-lead-pencil"></i> Cadastro de Atividade</div>
+                      											
+                    </div>
+                </div>		  
+      
+
+<!--
+	  <div id="NavBarTopoHome" class="navbar no-shadow>
+                    <div class="navbar-inner">
+						<div class="left">
+                            <a class="link" href="/atletas/" id="MenuPrincipal" data-panel="left">
+                                <i class="mdi mdi-arrow-left"></i>
+                            </a>
+                        </div>
+                        <div class="title" id="titleAppCadAtletas" >Cadastro Atleta</div>
+						
+					<!--	<div class="item-media"><img src="img/logo_asimare.png" width="44"/></div> -->
+						
+<!--           			</div>
+                </div>
+-->
+                 
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+		  
+		  <!-- CONTEUDO DA PAGINA AQUI -->
+		<!--	<div background-image='img/2110.jpg' -->
+		
+
+		<div class="list no-hairlines">
+		<ul>
+			<li>
+				<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-55"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Dt.Atividade</div>
+								  <div class="item-input-wrap">
+									<input type="text" id="cpdtatv" name="dtatv" placeholder="  /  /   ">
+								  </div>
+								</div>
+							  </div>
+					</div>
+					<div class="col-45"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Hora</div>
+								  <div class="item-input-wrap">
+									<input type="text" id="cphora" name="hora" placeholder="00:00">
+								  </div>
+								</div>
+							  </div>
+					</div>
+				</div>
+			</li>
+			<li>
+			  <div class="item-content item-input">
+				<div class="item-inner">
+				  <div class="item-title item-label">Local</div>
+				  <div class="item-input-wrap">
+					<input type="text" id="cplocalatv" name="local" placeholder="Local da Atividade">
+				  </div>
+				</div>
+			  </div>
+			</li>
+			<li>
+
+
+			</li>
+			<li>
+				<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-37"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Status</div>
+						  <div class="item-input-wrap">
+							<select id="cpstatus_atv" name="posicao">
+							  <option value="Cancelada" selected>Cancelada</option>
+							  <option value="Confirmada">Confirmada</option>
+							  <option value="Realizada" selected>Realizada</option>
+							</select>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+
+			</li>
+
+		  </ul>
+
+				<div class="block">
+				  <div class="row">
+					<button id="salvaratv" class="col button button-fill">Salvar</button>
+				  </div>
+				</div>
+
+			  </ul>
+
+			</div>
+
+		</div>		
+		  
+        </div>
+      </div>
+
+    </div>
+
+
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+		
+    <script type="text/javascript" src="cordova.js"></script>
+         
+    </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+        <title>Tela Inicial</title>
+    </head>
+    <body>
+       <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+         <div id="NavBarTopoHome" class="navbar no-shadow tema-primario">
+                    <div class="navbar-inner">
+						
+						<div class="left">
+                            <a href="/home/" class="link" id="MenuPrincipal" data-panel="left">
+                                <i class="mdi mdi-arrow-left">     ATIVIDADES  </i>
+                            </a>
+                        </div>
+						
+						<!-- 
+						<div class="item-media"><img src="img/logo.jpeg" width="30"/> GRUPOS</div>
+						-->
+                </div>
+			</div>
+                 
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+		  
+		  <!-- CONTEUDO DA PAGINA AQUI -->
+	
+		<div class="page">
+		  <div class="navbar">
+			<div class="navbar-inner sliding">
+			  <div class="left">
+				<a href="#" class="link back">
+				  <i class="icon icon-back"></i>
+				  <span class="ios-only">Back</span>
+				</a>
+			  </div>
+			  <div class="title">Swipeable Tabs</div>
+			</div>
+		  </div>
+		  <div class="toolbar tabbar">
+			<div class="toolbar-inner">
+			  <a href="#tab-1" class="tab-link tab-link-active">PARTIDAS</a>
+			  <a href="#tab-2" class="tab-link">CHEGADA</a>
+			  <a href="#tab-3" class="tab-link">TIRAR TIMES</a>
+			</div>
+		  </div>
+		  <div class="tabs-swipeable-wrap">
+			<div class="tabs">
+			  <div id="tab-1" class="page-content tab tab-active">
+				<div class="block">
+					<div class="list">
+					  <ul id=listaAtividades>
+
+					  </ul>
+					</div>
+
+
+
+		    	</div>
+				
+					  <!-- FAB Right Bottom (Orange) -->
+					  <div id="bt_novaAtividade" class="fab fab-right-bottom" style="color:green">
+
+						<a href="/cadAtividades/">
+							  <!-- Icons For iOS Theme -->
+							  <i class="mdi mdi-plus"></i>
+							  <i class="mdi mdi-close"></i>
+							</a>
+						</div>	
+
+				
+			  </div>
+			  <div id="tab-2" class="page-content tab">
+				<div class="block">
+
+  							<select style="color-green" id="sel_atleta" name="Atleta">
+							<option value=""> Informe quem chegou! </option>
+							</select>
+  							
+<!--							
+							<select style="color:green" id="sel_ordem" name="Ordem">
+							  <option value="1">CHEGADA</option>
+							  <option value="2">CRITÉRIOS</option>
+							</select>
+-->
+
+
+					<div class="list">
+					  <ul>
+						<li>
+						  <div class="item-content">
+							<div class="item-media">01 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">ANDRÉ</div>
+							  <div class="item-after">ATA</div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media">02 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">EVERALDO</div>
+							  <div class="item-after">ATA</div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media">03 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">MAX</div>
+							  <div class="item-after">MLG</div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media">04 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">TONY</div>
+							  <div class="item-after">VOL</div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media">05 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">CAÇA-RATO</div>
+							  <div class="item-after">ATA</div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media">06 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">JOÃO RIBEIRO</div>
+							  <div class="item-after">MLG</div>
+							</div>
+						  </div>
+						</li>					
+						<li>
+						  <div class="item-content">
+							<div class="item-media">07 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">JORGE</div>
+							  <div class="item-after">SAT</div>
+							</div>
+						  </div>
+						</li>					
+						  <div class="item-content">
+							<div class="item-media">08 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title">CASTILHO JR</div>
+							  <div class="item-after">SAT</div>
+							</div>
+						  </div>
+						</li>					
+						</li>					
+						  <div class="item-content">
+							<div class="item-media">09 - </i></div>
+							<div class="item-inner">
+							  <div class="item-title" style="color:red">ALDO</div>
+							  <div class="item-after">GOL - DM</div>
+							</div>
+						  </div>
+						</li>					
+					</ul>
+					</div>
+
+
+
+				</div>
+			  </div>
+			  <div id="tab-3" class="page-content tab">
+
+
+<!--
+Additional "timeline-horizontal" class to enable Horizontal timeline
+Additional "col-50" to define column width (50%)
+Additional "tablet-20" to define column width for tablets (20%)
+-->
+
+<!--
+<div class="timeline timeline-horizontal col-50 tablet-20">
+  <!-- Timeline Item (Day) -->
+<!--  <div class="timeline-item">
+    <center> <div style="color-yellow" class="timeline-item-date"> EQUIPE AZUL </div> </center> <!-- <small>AZUL</small> -->
+<!--    <div class="timeline-item-content">CAÇA-RATO - ATA</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-item-date"> EQUIPE AMARELA <small>AMARELO</small></div>
+    <div class="timeline-item-content">ATA - AMEBA</div>
+  </div>
+  </div>
+</div>
+<div>
+-->
+
+
+
+
+
+<div class="block-title">Resizable Grid</div>
+<div class="block grid-resizable-demo">
+  <div class="row align-items-stretch" style="height: 300px">
+    <div class="col resizable demo-col-center-content" style="color-yellow min-width: 45px">
+		  <ul>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+		  </ul>
+      <span class="resize-handler"></span>
+    </div>
+    <div class="col resizable display-flex flex-direction-column" style="padding: 0px; border: none; min-width: 50px; background-color: transparent">
+      <span class="resize-handler"></span>
+    </div>
+    <div class="col resizable demo-col-center-content" style="min-width: 45px">
+		  <ul>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+		  </ul>
+      <span class="resize-handler"></span>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+<div class="row no-gap">
+    <div class="col-50">
+	<div class="block-title">Equipe 1</div>
+		<div class="list links-list">
+		  <ul>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+		  </ul>
+		</div>
+	</div>
+	
+		
+		
+		
+	</div>	
+
+
+
+
+	<div class="col-50">
+
+	<div class="block-title">Equipe 2</div>
+		<div class="list links-list">
+		  <ul>
+			<li><a href="#"><div>ATA</div><div>VALDEVIO</div></a></li>
+			<li><a href="#"><div>ATA</div><div>SALZANO</div></a></li>
+			<li><a href="#"><div>MEI</div><div>JORGE</div></a></li>
+		  </ul>
+		</div>
+
+
+	</div>
+	
+	
+	    <div class="col-50">
+		<div class="list links-list">
+		  <ul>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+		  </ul>
+		</div>
+	</div>	
+
+    <div class="col-50">
+		<div class="list links-list">
+		  <ul>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+			<li><a href="#"><div>VALDEVIO</div> <div>ATA</div></a></li>
+			<li><a href="#"><div>SALZANO</div>  <div>ATA</div></a></li>
+			<li><a href="#"><div>JORGE</div>    <div>MEI</div></a></li>
+		  </ul>
+		</div>
+	</div>	
+	
+	
+</div>
+
+-->
+
+<!--
+<table border=0 align=center width=1 height=800 >
+<div>CAÇA-RATO</div><div>ATA</div><br>
+<div>SALZANO</div><div>ATA</div><br>
+<tr><td bgcolor=green></td></tr>
+<div>ATA</div><div>AMEBA</div><br>
+<div>ATA</div><div>ANDRE</div><br>
+</table>
+</div>
+-->		
+
+
+	  <!-- FAB Right Bottom (Orange) -->
+	  <div class="fab fab-right-bottom" style="color:green">
+
+		<a href="#">
+			  <!-- Icons For iOS Theme -->
+			  <i class="mdi mdi-plus"></i>
+			  <i class="mdi mdi-close"></i>
+			</a>
+
+	<!-- FAB speed dial actions with labels -->
+		<div class="fab-buttons fab-buttons-top">
+		  <a href="#" class="fab-label-button">
+			<span><i class="mdi Account-Check."></span>
+			<span class="fab-label">Limpar Lista</span>
+		  </a>
+		  <a href="#" class="fab-label-button">
+			<span><i class="mdi Human-Male-Male."></span>
+			<span class="fab-label">Adicionar Convidado</span>
+		  </a>
+		  <a href="#" class="fab-label-button">
+			<span><i class="mdi Human-Greeting."></i></span>
+			<span class="fab-label">Adicionar Atleta</span>
+		  </a>
+		</div>
+	  </div>
+		   
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    
+		
+    <script type="text/javascript" src="cordova.js"></script>
+        
+    </body>
+</html>

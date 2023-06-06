@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+        <title>Peladeiros</title>
+    </head>
+    <body>
+       <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+			<div id="NavBarAtleta" class="navbar" style="background:#2E7773">
+                    <div class="navbar-inner">
+						<div class="left">
+                            <a href="/home/" class="link" id="MenuPrincipal" data-panel="left">
+                                <i class="mdi mdi-arrow-left"></i>
+                            </a>
+                        </div>
+                        <div class="title" id="titleAppAtletas" ><i id="icone" class="mdi mdi-soccer"></i>  Atletas  </div>
+<!--						<div class="item-media"><img src="img/logo_asimare.png" width="44"/></div>  -->
+						<br>
+
+                </div>
+			</div>
+                 
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+		  
+		  <!-- CONTEUDO DA PAGINA AQUI -->
+	   	<!--	<div background-image='img/2110.jpg' -->
+
+		<div class="list media-list">
+		  <ul id='listaAtletas'>
+			
+		  </ul>
+		</div>
+		</div>				
+
+		<!-- FAB BUTTON -->
+
+		  <div class="fab fab-extended fab-center-bottom color-green">
+			<a href="/cadatletas/">
+			  <i class="mdi mdi-account-group-outline"></i>
+			  <i class="mdi mdi-account-group-outline"></i>
+			  <div class="fab-text">Novo Atleta</div>
+			</a>
+		  </div>
+
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    
+		
+    <script type="text/javascript" src="cordova.js"></script>
+        
+    </body>
+</html>

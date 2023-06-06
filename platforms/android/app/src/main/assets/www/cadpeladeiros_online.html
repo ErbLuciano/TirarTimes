@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+        <title>Tirar Times</title>
+    </head>
+    <body>
+       <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+         <div id="NavBarTopoHome" class="navbar no-shadow tema-primario">
+                    <div class="navbar-inner">
+						<div class="left">
+                            <a class="link" href="/atletas/" id="MenuPrincipal" data-panel="left">
+                                <i class="mdi mdi-arrow-left"></i>
+                            </a>
+                        </div>
+                        <div class="title" id="titleApp" >Cadastro Atleta</div>
+						
+					<!--	<div class="item-media"><img src="img/logo_asimare.png" width="44"/></div> -->
+						
+           			</div>
+                </div>
+
+                 
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+		  
+		  <!-- CONTEUDO DA PAGINA AQUI -->
+		<!--	<div background-image='img/2110.jpg' -->
+		
+		<br>
+		<center><div class="item-media"><img id="imagemPerfil" src="img/foto.png" width="100"/></div></center>		
+		<form class="list form-store-data" id="my-form">
+		<ul>
+			<li>
+				<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-55"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Apelido</div>
+								  <div class="item-input-wrap">
+									<input type="text" id="cpapelido" name="apelido" placeholder="Apelido do atleta">
+								  </div>
+								</div>
+							  </div>
+					</div>
+					<div class="col-45"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Fone</div>
+								  <div class="item-input-wrap">
+									<input type="text" id="cpfone" name="fone" placeholder="(XX)XXXXX-XXXX">
+								  </div>
+								</div>
+							  </div>
+					</div>
+				</div>
+			</li>
+			<li>
+			  <div class="item-content item-input">
+				<div class="item-inner">
+				  <div class="item-title item-label">Nome</div>
+				  <div class="item-input-wrap">
+					<input type="text" id="cpnome" name="nome" placeholder="Nome do atleta">
+				  </div>
+				</div>
+			  </div>
+			</li>
+			<li>
+
+
+			</li>
+			<li>
+				<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-33"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Dt.Nasc</div>
+								  <div class="item-input-wrap">
+									<input type="text" id="cpdtnasc" name="dtnasc" placeholder="  /  /   ">
+								  </div>
+								</div>
+							  </div>
+					</div>
+					<div class="col-37"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Posição</div>
+						  <div class="item-input-wrap">
+							<select id="cpposicao" name="posicao">
+							  <option value="goleiro" selected>Goleiro</option>
+							  <option value="zagueiro">Zagueiro</option>
+							  <option value="Lateral Dir" selected>Lateral Dir</option>
+							  <option value="Lateral Esq">Lateral Esq</option>
+							  <option value="Volante">Volante</option>
+							  <option value="MeioCampo">Meio-Campo</option>
+							  <option value="Atacante">Atacante</option>
+							</select>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-30"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Melhor pé</div>
+						  <div class="item-input-wrap">
+							<select id="cpmelhorpe" name="melhorpe">
+							  <option value="direito" selected>Direito</option>
+							  <option value="esquerdo">Esquerdo</option>
+							</select>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+			</li>
+			<li>
+				<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-33"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Camisa</div>
+								  <div class="item-input-wrap">
+									<input type="text" id='cpcamisa' name="camisa" placeholder="Nº Camisa">
+								  </div>
+								</div>
+							  </div>
+					</div>
+							<div class="col-33"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Velocidade</div>
+								  <div class="item-input-wrap">
+									<input type="text" id='cpvelocidade' name="velocidade" placeholder="0-10">
+								  </div>
+								</div>
+							  </div>
+					</div>
+							<div class="col-33"> 
+							  <div class="item-content item-input">
+								<div class="item-inner">
+								  <div class="item-title item-label">Habilidade</div>
+								  <div class="item-input-wrap">
+									<input type="text" id='cphabilidade' name="habilidade" placeholder="0-10">
+								  </div>
+								</div>
+							  </div>
+					</div>
+					<div class="col-45"> 
+					</div>
+				</div>
+			</li>
+			<li>
+			
+					<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-50"> 
+				  <label class="item-checkbox item-content">
+					<input type="checkbox" id="cpfundador" name="demo-checkbox" value="Books" checked="checked"/>
+					<i class="icon icon-checkbox"></i>
+					<div class="item-inner">
+				  <div  class="item-title">Fundador</div>
+					</div>
+				  </label>
+					</div>
+					<div class="col-50"> 
+				  <label class="item-checkbox item-content">
+					<input type="checkbox" id="cpdiretoria" name="demo-checkbox" value="Movies"/>
+					<i class="icon icon-checkbox"></i>
+					<div class="item-inner">
+					<div class="item-title">Diretoria</div>
+					</div>
+				</div>		
+		
+			</li>		
+						<li>
+			
+					<div class="row no-gap">
+					<!-- Each "cell" has col-[width in percents] class -->
+					<div class="col-50"> 
+				  <label class="item-checkbox item-content">
+					<input type="checkbox" id="cpefetivo" name="demo-checkbox" value="Books" checked="checked"/>
+					<i class="icon icon-checkbox"></i>
+					<div class="item-inner">
+				  <div  class="item-title">Efetivo</div>
+					</div>
+				  </label>
+					</div>
+					<div class="col-50"> 
+				  <label class="item-checkbox item-content">
+					<input type="checkbox" id="cpconvidado" name="demo-checkbox" value="Movies"/>
+					<i class="icon icon-checkbox"></i>
+					<div class="item-inner">
+					<div class="item-title">Convidado</div>
+					</div>
+				</div>		
+		
+			</li>		
+		  </ul>
+
+				<div class="block">
+				  <div class="row">
+					<button id="BotaoSalvar" class="col button button-fill">Salvar</button>
+				  </div>
+				</div>
+
+			  </ul>
+
+			</div>
+
+		</form>		
+		  
+        </div>
+      </div>
+
+    </div>
+
+
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+		
+    <script type="text/javascript" src="cordova.js"></script>
+        
+    </body>
+</html>

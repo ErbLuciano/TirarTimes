@@ -1,0 +1,64 @@
+/* aqui				
+						
+				
+
+
+							
+							//LOCALIZAÇÃO LOCAL DA FOTO
+							$("#local").html(imageURI);
+
+                            //UPLOAD DA FOTO
+                            var options = new FileUploadOptions();
+                            options.fileKey = "file";
+                            options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
+                            options.mimeType = "image/jpeg";
+
+                            options.chunkedMode = false;
+
+                            var ft = new FileTransfer();
+                            ft.upload(imageURI, "https://contabilreis.com.br/upload-perfil.php", function (resultado) {
+                                
+								//SE A RESPOSTA FOR 0 DEU ERRADO UPLOAD			
+								if (resultado.response==0){
+									app.preloader.hide();
+									app.dialog.alert('Por favor, tente novamente.','<b>Upload não realizado</b>');	
+
+								}									
+								
+								//SE FOI DIREFERENTE DE 0 DEU CERTO
+								if (resultado.response!==0){
+									app.preloader.hide();
+									$("#nomeUpload").html(resultado.response);
+									app.dialog.alert('Imagem Salva no Servidor','<b>UPLOAD REALIZADO!</b>');
+								}
+
+                            }, function (error) {
+                                alert(JSON.stringify(error));
+                            }, options);
+
+                        }
+
+                        function onFail(message) {
+                            alert('Falhou. Motivo: ' + message, 'FALHOU!');
+                        }
+                    }
+			
+	aqui	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// preparar variaveis para salvar;
+	
+
+/*
+						*/
+
+
+
+	 

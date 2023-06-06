@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+           Personalize a política de segurança de conteúdo na marca meta abaixo, conforme necessário. Adicione 'unsafe-inline' ao default-src para habilitar o JavaScript embutido.
+    Para obter mais detalhes, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+       -->
+   
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/framework7.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+    <title>Login App</title>
+</head>
+
+
+<body>
+
+
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+			
+			
+            <div data-name="cadastrar" class="page">
+				
+				<!-- Top Navbar -->
+                <div id="NavBarTopoCadastrar" class="navbar no-shadow" style="margin-bottom:0px;">
+                    <div class="navbar-inner" style="justify-content:center">
+                        <div class="title"><i class="mdi mdi-lead-pencil"></i> Cadastro</div>
+                      											
+                    </div>
+                </div>
+				
+							
+				
+                <!-- Scrollable page content -->
+                <div class="page-content">
+				
+				<div id="CadastroComInternet">
+				
+<div class="block-title">Todas as informações são obrigatórias:</div>				
+					
+				 <div class="list no-hairlines">
+              <ul>
+			  <li class="item-divider">Informações Básicas:</li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Nome Completo</div>
+                    <div class="item-input-wrap">
+                      <input type="text" id="CadnomeCadastro" maxlength="100" name="nomeCadastro" placeholder="Seu nome completo">
+                    </div>
+                  </div>
+                </li>
+				<li class="item-content item-input">
+				   <div class="item-inner">
+					<div class="item-title item-label">Data de Nascimento</div>
+					<div class="item-input-wrap">
+					  <input type="date" id="CaddatanascimentoCadastro" placeholder="Selecionar Data">
+					</div>
+				  </div>
+				</li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Telefone (DDD + Número)</div>
+                    <div class="item-input-wrap">
+                      <input type="tel" id="CadtelefoneCadastro" maxlength="15" name="telefoneCadastro" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                  </div>
+                </li>
+				<li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">CPF</div>
+                    <div class="item-input-wrap">
+                      <input type="tel" id="CadcpfCadastro" maxlength="14" name="text" placeholder="xxx.xxx.xxx-xx">
+                    </div>
+                  </div>
+                </li>
+				<li class="item-divider">Dados de acesso:</li>
+				<li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">E-mail (Login)</div>
+                    <div class="item-input-wrap">
+                      <input type="email" id="CademailCadastro" name="emailCadastro" placeholder="Informe um e-mail válido">
+                    </div>
+                  </div>
+                </li>
+				<li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Criar Senha</div>
+                    <div class="item-input-wrap">
+                      <input type="password" id="CadsenhaCadastro" name="senhaCadastro" placeholder="Informe uma senha">
+                    </div>
+                  </div>
+                </li>
+				<li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Repetir Senha</div>
+                    <div class="item-input-wrap">
+                      <input type="password" id="CadrepeteSenhaCadastro" name="repeteSenhaCadastro" placeholder="Repita a senha">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+			
+			<div class="block">
+			
+			<label class="checkbox"><input id="CadcheckPolitica" type="checkbox"><i class="icon-checkbox"></i></label> Li e concordo com a <a href="#" class="link external"> <u>Política de Privacidade</u></a>
+			<br><br>
+		
+			<label class="checkbox"><input id="CadcheckTermos" type="checkbox"><i class="icon-checkbox"></i></label> Li e concordo com os <a href="#" class="link external"> <u>Termos de Uso</u></a>
+		
+			</div>
+			 
+		<p class="block row">
+        <button id="Cadcadastra" class="col button button-big button-fill color-blue">FAZER CADASTRO!</button>
+		<center>
+		<a href="/login/" class="link"><b><i class="mdi mdi-login-variant"></i> Já tenho uma conta</b></a><br><br>
+		</center>
+		
+		</p>
+		
+								
+				</div>
+				
+										 				
+
+                </div>
+				
+				 
+				
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/framework7.js"></script>
+    <script type="text/javascript" src="scripts/my-app.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+
+</body>
+</html>

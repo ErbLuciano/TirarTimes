@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+           Personalize a política de segurança de conteúdo na marca meta abaixo, conforme necessário. Adicione 'unsafe-inline' ao default-src para habilitar o JavaScript embutido.
+    Para obter mais detalhes, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+       -->
+   
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/framework7.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+    <title>Login App</title>
+</head>
+
+
+<body>
+
+
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+			
+			
+            <div data-name="cadastrar" class="page">
+				
+				<!-- Top Navbar -->
+                <div id="NavBarTopoCadastrar" class="navbar no-shadow tema-primario" style="margin-bottom:0px;">
+                    <div class="navbar-inner" style="justify-content:left">
+   						<div class="left">
+                            <a href="/grupos/" class="link" id="MenuPrincipal" data-panel="left">
+                                <i class="mdi mdi-arrow-left"> </i>
+                            </a>
+                        </div>
+
+						
+						<div class="title"><i class="mdi mdi-lead-pencil"></i> Cadastro de Grupos</div>
+                      											
+                    </div>
+                </div>
+				
+							
+				
+                <!-- Scrollable page content -->
+                <div class="page-content">
+				
+			<br>
+			<div id="CadastroComInternet">
+				<center><div class="item-media"><img id="imagemPerfil" src="img/escudo.png" width="80"/></div></center>						
+			 <div class="list no-hairlines">
+              <ul>
+				<li>
+				<div class="row no-gap">
+					<div class="col-70"> 
+						<div class="item-content item-input">
+						<div class="item-inner">
+						<div class="item-title item-label">Nome do Grupo</div>
+						<div class="item-input-wrap">
+							<input type="text" id="cpnomegrupo" maxlength="100" name="nomeCadastro" placeholder="Nome do grupo">
+						</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-30"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Tipo</div>
+						  <div class="item-input-wrap">
+							<select id="cptipo" name="posicao">
+							  <option value="Campo" selected>Campo</option>
+							  <option value="Society Dir" selected>Society</option>
+							  <option value="Fut-sal">Fut-sal</option>
+							  <option value="Basquete">Basquete</option>
+							  <option value="Handebol">Handebol</option>
+							  <option value="Voley">Voley</option>
+							</select>
+						</div>
+					  </div>
+					</div>
+				</div>
+                </div>
+                </li>
+
+                <li>
+				<div class="row no-gap">
+					<div class="col-60"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+							<div class="item-title item-label">Local da Pelada</div>
+							<div class="item-input-wrap">
+							<input type="text" id="cplocal" name="local" placeholder="Local da Pelada">
+						</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-40"> 
+						<div class="item-content item-input">
+						<div class="item-inner">
+						<div class="item-title item-label">Bairro</div>
+						<div class="item-input-wrap">
+						<input type="text" id="cpbairro" maxlength="100" name="bairro" placeholder="Bairro">
+						</div>
+						</div>
+					  </div>
+					</div>
+
+                </li>
+
+                <li>
+				<div class="row no-gap">
+					<div class="col-80"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+							<div class="item-title item-label">Cidade</div>
+							<div class="item-input-wrap">
+							<input type="text" id="cpcidade" name="cidade" placeholder="Cidade">
+						</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-20"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+							<div class="item-title item-label">UF</div>
+							<div class="item-input-wrap">
+							<input type="text" id="cpuf" name="uf" placeholder="UF">
+						</div>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+                </li>
+				<li>
+
+				<div class="row no-gap">
+					<div class="col-60"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Dia da Semana</div>
+						  <div class="item-input-wrap">
+							<select id="cpdiasemana" name="posicao">
+							  <option value="seg" >Segunda-feira</option>
+							  <option value="ter" >Terça-feira</option>
+							  <option value="qua">Quarta-feira</option>
+							  <option value="qui">Quinta-feira</option>
+							  <option value="sex">Sexta-feira</option>
+							  <option value="sab">Sábado</option>
+							  <option value="dom">Domingo</option>
+							</select>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="col-40"> 
+					  <div class="item-content item-input">
+						<div class="item-inner">
+							<div class="item-title item-label">horário</div>
+							<div class="item-input-wrap">
+							<input type="text" id="cphorario" name="horario" placeholder="00:00">
+						</div>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+				</li>
+              </ul>
+            </div>
+			
+			 
+		<p class="block row">
+
+        <center><button id="atualizargrupo" class="col button button-big button-fill color-blue display-none">Atualizar Grupo</button></center>
+        <center><button id="salvargrupo" class="col button button-big button-fill color-green">Salvar Grupo</button></center>
+
+		</p>
+		
+								
+				</div>
+				
+										 				
+
+                </div>
+				
+				 
+				
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/framework7.js"></script>
+    <script type="text/javascript" src="scripts/my-app.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+
+</body>
+</html>

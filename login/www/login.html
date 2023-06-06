@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/framework7.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+    <title>Login App</title>
+</head>
+
+
+<body>
+
+
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+			
+			
+            <div data-name="login" class="page">
+				
+											
+				
+                <!-- Scrollable page content -->
+                <div class="page-content">
+				
+				<center><img src="img/login.png" style="max-width:100%">
+				<h1><b>LOGIN</b></h1>
+				</center>
+					
+				 <div class="list no-hairlines">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Seu e-mail</div>
+                    <div class="item-input-wrap">
+                      <input type="text" id="ContaLogin" name="ContaLogin" placeholder="Seu Email">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Senha</div>
+                    <div class="item-input-wrap">
+                      <input type="password" id="ContaSenha" name="ContaSenha" placeholder="Sua Senha">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+			
+			 <p class="block row">
+       <button id="Fazerlogin" class="col button button-fill button-big color-blue">ENTRAR</button>
+		</p>
+		<p><center><a href="#" id="esqueceuSenha" class="link">Esqueceu sua senha?</a></center></p>
+		<br>
+		
+		<br>
+		<center><h2>Ainda não tem cadastro?</h2></center>
+		
+		<p class="block row">
+        <a href="/cadastrar/" class="link col button button-big button-outline color-blue">QUERO ME CADASTRAR!</a>
+		</p>
+								
+				
+				
+								
+
+                </div>
+				
+				 
+				
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/framework7.js"></script>
+    <script type="text/javascript" src="scripts/my-app.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+
+</body>
+</html>
